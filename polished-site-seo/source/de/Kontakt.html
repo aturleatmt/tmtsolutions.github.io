@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Kontakt | TMT Solutions</title>
+  <meta name="description" content="Kontaktieren Sie TMT Solutions für Microsoft Dynamics 365 Business Central.">
+  
+  
+
+
+
+
+
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+  <!-- SITE_HEADER -->
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">TMT SOLUTIONS · LINDAU</p>
+        <h1>Lassen Sie uns über Ihr Vorhaben sprechen.</h1>
+        <p class="lead">Sie planen Microsoft Dynamics 365 Business Central, möchten Ihre Abläufe besprechen oder haben eine Frage? Schreiben Sie uns oder rufen Sie direkt an.</p>
+      </div>
+    </section>
+
+    <section class="contact-content" id="kontakt">
+      <div class="wrap contact-grid">
+        <div class="form-card">
+          <p class="eyebrow">IHRE ANFRAGE</p>
+          <h2>Wie können wir Ihnen helfen?</h2>
+          <p class="form-intro">Dieses Formular ist für Business-Central- und ERP-Anfragen, Support sowie Bewerbungen vorgesehen. Bitte senden Sie keine privaten oder themenfremden Anfragen. Ihre Angaben werden zur Bearbeitung Ihrer Nachricht verwendet; Details finden Sie in den <a href="datenschutz.html">Datenschutzhinweisen</a>.</p>
+          <form id="contact-form" data-contact-form action="/kontakt.php" method="post">
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Dieses Feld leer lassen</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="name">Name *</label>
+              <input id="name" name="name" type="text" autocomplete="name" maxlength="120" required>
+            </div>
+            <div class="field">
+              <label for="company">Unternehmen</label>
+              <input id="company" name="company" type="text" autocomplete="organization" maxlength="160">
+            </div>
+            <div class="field">
+              <label for="email">E-Mail-Adresse *</label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+            </div>
+            <div class="field">
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40">
+            </div>
+            <div class="field full">
+              <label for="topic">Worum geht es?</label>
+              <select id="topic" name="topic" required>
+                <option value="" selected disabled>Bitte Thema auswählen</option>
+                <option value="praesentation">Präsentationstermin Business Central</option>
+                <option value="einfuehrung">Einführung und Beratung</option>
+                <option value="anpassungen">Anpassungen und Erweiterungen</option>
+                <option value="support">Support</option>
+                <option value="karriere">Bewerbung / Lebenslauf</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="message">Ihre Nachricht *</label>
+              <textarea id="message" name="message" maxlength="5000" required placeholder="Beschreiben Sie Ihr Business-Central-/ERP-Anliegen oder Ihre Bewerbung."></textarea>
+            </div>
+            <div class="field full">
+              <label for="attachments">Anhänge (optional)</label>
+              <input class="attachment-input" id="attachments" name="attachments[]" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.csv,.png,.jpg,.jpeg" aria-describedby="attachment-help">
+              <ul class="attachment-list" id="attachment-list" aria-label="Ausgewählte Anhänge" aria-live="polite" hidden></ul>
+              <p class="form-note" id="attachment-help">Bis zu 3 Dateien, insgesamt maximal 5 MB. Erlaubt sind PDF, Word-, Excel- und PowerPoint-Dateien, CSV sowie PNG/JPG (z. B. Lebenslauf oder Projektunterlagen). Keine Archive oder ausführbaren Dateien.</p>
+            </div>
+            <p class="privacy-note">Mit dem Absenden werden Ihre Angaben und ausgewählten Anhänge zur Bearbeitung Ihrer Anfrage verarbeitet. Weitere Informationen finden Sie in den <a href="datenschutz.html">Datenschutzhinweisen</a>.</p>
+            <div class="submit-row">
+              <button class="button" type="submit">Anfrage senden</button>
+              <p class="form-note">* Pflichtfelder. Ihre Angaben werden zur Bearbeitung der Anfrage verarbeitet.</p>
+            </div>
+            <p class="form-status field full" role="status" aria-live="polite" aria-atomic="true"></p>
+          </form>
+        </div>
+
+        <aside class="info-column">
+          <section class="info-card">
+            <p class="eyebrow">DIREKT ERREICHBAR</p>
+            <h2>Kontakt</h2>
+            <dl class="info-list">
+              <div class="info-item"><dt>E-Mail</dt><dd><a href="mailto:info@tmtsolutions.de">info@tmtsolutions.de</a></dd></div>
+              <div class="info-item"><dt>Telefon</dt><dd><a href="tel:+4983822792560">+49&nbsp;8382&nbsp;279256&nbsp;0</a></dd></div>
+              <div class="info-item"><dt>Adresse</dt><dd>TMT Solutions GmbH<br>Ludwig-Kick-Str. 12<br>88131 Lindau (Bodensee)<br>Deutschland</dd></div>
+            </dl>
+          </section>
+          <section class="info-card support-card">
+            <p class="eyebrow">BESTEHENDER SUPPORTFALL?</p>
+            <h2>Zum Support-Bereich</h2>
+            <a class="button secondary" href="Support.html">Support öffnen</a>
+          </section>
+          <section class="info-card">
+            <p class="eyebrow">TERMIN VEREINBAREN</p>
+            <h2>Gespräch buchen</h2>
+            <p>[PLATZHALTER: Freigegebenen Link zum Terminbuchungssystem einfügen.]</p>
+            <a class="button secondary" href="Kontakt.html?thema=praesentation">Termin per Kontaktformular anfragen</a>
+          </section>
+          <section class="info-card">
+            <p class="eyebrow">ANFAHRT</p>
+            <h2>Lindau am Bodensee</h2>
+            <p class="map-note">Die Karte wird nicht automatisch geladen. Beim Öffnen von OpenStreetMap werden Daten an den Kartenanbieter übertragen.</p>
+            <a class="map-link" href="https://www.openstreetmap.org/search?query=Ludwig-Kick-Str.%2012%2C%2088131%20Lindau" target="_blank" rel="noopener noreferrer">Standort in OpenStreetMap öffnen</a>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE_FOOTER -->
+
+  
+  
+  
+
+
+
+</body>
+</html>
