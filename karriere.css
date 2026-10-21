@@ -1,0 +1,54 @@
+.career-hero .wrap { max-width: 900px; }
+.career-hero h1 { max-width: 19ch; }
+.career-hero .button { margin-top: 24px; }
+.career-content { padding-block: 58px 54px; }
+.career-content .section-heading { max-width: 720px; }
+.career-content .section-heading h2, .career-work-intro h2, .career-projects h2, .career-location h2, .career-apply h2 { margin-top: 8px; font-size: clamp(27px, 3.5vw, 38px); }
+.career-content .section-heading > p:last-child, .career-work-intro > p:last-child, .career-projects > div:first-child > p:last-child, .career-location > div > p:last-child, .career-apply-card > div > p:last-child { margin-top: 12px; color: var(--muted); }
+.career-role-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 16px; }
+.career-role { display: flex; min-width: 0; flex-direction: column; padding: 22px; border: 1px solid var(--line); border-top: 4px solid #44b864; border-radius: 13px; background: #fff; box-shadow: var(--shadow); }
+.career-role--training { border-top-color: #169b41; background: linear-gradient(160deg, #fff 50%, #f2f8f3); }
+.career-role-label { align-self: flex-start; padding: 5px 9px; border-radius: 999px; background: #eaf5ed; color: #145b2c; font-size: 10px; font-weight: 800; letter-spacing: .1em; }
+.career-role h3 { margin-top: 15px; font-size: clamp(19px, 2vw, 23px); }
+.career-role-focus { margin-top: 7px; color: var(--green-text); font-size: 13px; font-weight: 700; }
+.career-role > p:not(.career-role-focus) { margin-top: 13px; color: var(--muted); font-size: 14px; }
+.career-role ul { display: grid; gap: 7px; margin: 15px 0 20px; padding-left: 19px; color: #3e5144; font-size: 13px; }
+.career-role li::marker { color: var(--green-text); }
+.pdf-link { display: flex; min-height: 58px; align-items: center; gap: 10px; margin-top: auto; padding: 10px 12px; border: 1px solid #b9d8c1; border-radius: 8px; background: #f3faf4; color: #124f26; text-decoration: none; }
+.pdf-link:hover { border-color: #168b36; background: #e7f5ea; }
+.pdf-link svg { width: 23px; height: 23px; flex: none; }
+.pdf-link span { display: grid; gap: 2px; }
+.pdf-link strong { font-size: 13px; }
+.pdf-link small { color: #4f6556; font-size: 11px; }
+.availability { margin-top: 18px; padding: 13px 16px; border-left: 3px solid #3b9c55; border-radius: 4px; background: #edf5ef; color: #344b3a; font-size: 13px; }
+.career-work-layout { display: grid; grid-template-columns: minmax(230px, .85fr) minmax(0, 1.5fr); align-items: start; gap: 48px; }
+.career-work-intro { position: sticky; top: 112px; }
+.career-perk-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.career-perk { min-height: 160px; padding: 19px; border: 1px solid #d9e6dc; border-radius: 11px; background: rgba(255,255,255,.82); }
+.career-perk > span { color: var(--green-text); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+.career-perk h3 { margin-top: 11px; font-size: 17px; }
+.career-perk p { margin-top: 8px; color: var(--muted); font-size: 13px; }
+.career-location { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.career-location > div { max-width: 650px; }
+.career-location .button { flex: none; }
+.career-apply { padding-top: 10px; }
+.career-apply-card { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: clamp(24px, 4vw, 38px); border: 1px solid #cbded0; border-radius: 14px; background: linear-gradient(120deg, #fff, #edf6ef); box-shadow: var(--shadow); }
+.career-apply-card > div { max-width: 650px; }
+.career-apply-card .button { flex: none; }
+.career-apply-card a:not(.button) { color: var(--green-text); font-weight: 700; }
+
+@media (max-width: 900px) {
+  .career-role-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .career-work-layout { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .career-work-intro { position: static; }
+}
+@media (max-width: 760px) {
+  .career-content { padding-block: 42px 40px; }
+}
+@media (max-width: 560px) {
+  .career-role-grid, .career-perk-grid { grid-template-columns: minmax(0, 1fr); }
+  .career-role { padding: 19px; }
+  .career-perk { min-height: 0; }
+  .career-location, .career-apply-card { align-items: flex-start; flex-direction: column; }
+  .career-location .button, .career-apply-card .button { width: 100%; }
+}

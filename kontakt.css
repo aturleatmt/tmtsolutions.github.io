@@ -1,0 +1,81 @@
+.contact-content { padding-block: 58px 76px; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); gap: 28px; align-items: start; }
+.form-card, .info-card { padding: clamp(22px, 4vw, 34px); border: 1px solid var(--line); border-radius: 12px; background: #fff; box-shadow: var(--shadow); }
+.form-card h2, .info-card h2 { margin-top: 8px; font-size: clamp(22px, 3vw, 28px); }
+.form-intro { margin: 10px 0 24px; color: var(--muted); font-size: 14px; }
+form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.field { display: grid; min-width: 0; gap: 6px; }
+.field.full { grid-column: 1 / -1; }
+label { color: #344b3a; font-size: 13px; font-weight: 600; }
+input, select, textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #b9cbbd;
+  border-radius: 7px;
+  background: #fff;
+  color: var(--ink);
+  color-scheme: light;
+  font: inherit;
+  font-size: 15px;
+}
+input::placeholder, textarea::placeholder { color: #63766a; }
+input:focus, select:focus, textarea:focus { border-color: var(--green-text); outline: 3px solid rgba(18, 101, 43, .22); }
+textarea { min-height: 140px; resize: vertical; }
+.attachment-input {
+  padding: 9px;
+  border: 1px dashed #a8c2ae;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f7fbf8, #eef6f0);
+  color: var(--muted);
+  font-size: 13px;
+}
+.attachment-input::file-selector-button {
+  margin-right: 13px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--green-text);
+  box-shadow: 0 2px 5px rgba(18, 101, 43, .16);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+.attachment-input:hover::file-selector-button { background: #0d5423; box-shadow: 0 4px 10px rgba(18, 101, 43, .2); transform: translateY(-1px); }
+.attachment-input:focus-visible { border-style: solid; outline: 3px solid rgba(18, 101, 43, .22); outline-offset: 2px; }
+.attachment-input:focus-visible::file-selector-button { box-shadow: 0 0 0 3px rgba(18, 101, 43, .2); }
+.attachment-input:disabled { opacity: .6; cursor: not-allowed; }
+.attachment-list { display: grid; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
+.attachment-list li { display: flex; min-width: 0; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 11px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.attachment-name { min-width: 0; overflow-wrap: anywhere; color: var(--ink); font-size: 13px; }
+.attachment-remove { flex: 0 0 auto; padding: 6px 10px; border: 1px solid #cfdfd2; border-radius: 6px; background: #f5faf6; color: #275b36; cursor: pointer; font: inherit; font-size: 12px; font-weight: 700; }
+.attachment-remove:hover { border-color: #bd7777; background: #fff6f6; color: #8a2828; }
+.attachment-remove:focus-visible { outline: 3px solid rgba(18, 101, 43, .22); outline-offset: 2px; }
+.privacy-note, .submit-row { grid-column: 1 / -1; }
+.privacy-note { color: var(--muted); font-size: 13px; }
+.privacy-note a { color: var(--green-text); text-underline-offset: 3px; }
+.submit-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.form-note { color: var(--muted); font-size: 12px; }
+.info-column { display: grid; gap: 16px; }
+.info-list { display: grid; gap: 17px; margin: 18px 0 0; }
+.info-item { display: grid; gap: 2px; }
+.info-item dt { color: var(--muted); font-size: 12px; font-weight: 600; }
+.info-item dd { margin: 0; color: var(--ink); }
+.info-item a { color: var(--green-text); text-underline-offset: 3px; }
+.support-card > p:not(.eyebrow) { margin-top: 12px; color: var(--muted); }
+.support-card .button { margin-top: 16px; }
+.map-note { margin-top: 14px; font-size: 13px; }
+.map-link { display: inline-block; margin-top: 14px; font-weight: 700; text-underline-offset: 3px; }
+
+@media (max-width: 760px) {
+  .contact-content { padding-block: 42px 56px; }
+  .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .info-column { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  form, .info-column { grid-template-columns: minmax(0, 1fr); }
+  .field.full, .privacy-note, .submit-row { grid-column: auto; }
+}
